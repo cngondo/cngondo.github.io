@@ -1,0 +1,9 @@
+#body{
+    background-color: solid whitesmoke;
+    background-image: url('assests/bg2.jpg');
+}
+.name{
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    text-color: blue;
+}
