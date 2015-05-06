@@ -2,7 +2,13 @@
     background-color:solid black;
 /*    background-image: url("/assets/bg2.jpg");*/
     background-size: cover;
+/*
+    opacity: 0.3;
+    position: absolute;
+    z-index: -4;
+*/
 }
+
 .name{
     font-family: 'Sacramento', cursive;
     text-align: center;
