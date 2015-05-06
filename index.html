@@ -9,30 +9,71 @@
         <script type="text/javascript" src="js/jquery.textillate.js"></script>
         <script type="text/javascript" src="js/jquery.fittext.js"></script>
         <script type="text/javascript" src="js/jquery.lettering.js"></script>
+        <script type="text/javascript" src="js/typed.js"></script>
         <script type="text/javascript" src="index.js"></script>    
         <script type="text/javascript" src="js/materialize.min.js"></script>
-<!--
         <script>
-            $('.hdr').textillate({ in: { effect: 'fadeInLeft' } });
+            $(function(){
+                $(".element1").typed({
+                    strings: ["cornellius ngondo "],
+                    typeSpeed: 10
+                });
+            });
+            $(function(){
+                $(".element2").typed({
+                    strings: ["eat | code | sleep "],
+                    typeSpeed: 10
+                });
+            });
         </script>
--->
-          
+        <style>
+/*
+            .typed-cursor{
+                opacity: 1;
+                -webkit-animation: blink 0.7s infinite;
+                -moz-animation: blink 0.7s infinite;
+                animation: blink 0.7s infinite;
+            }
+            @keyframes blink{
+                0% { opacity:1; }
+                50% { opacity:0; }
+                100% { opacity:1; }
+            }
+            @-webkit-keyframes blink{
+                0% { opacity:1; }
+                50% { opacity:0; }
+                100% { opacity:1; }
+            }
+            @-moz-keyframes blink{
+                0% { opacity:1; }
+                50% { opacity:0; }
+                100% { opacity:1; }
+            }
+*/
+        </style>
     </head>
     <body id="body" class="#3f51b5 indigo-text">        
         <div class="container">        
             <div class="center-align" class="col s12">                
-                <h1 class="animated fadeInDown">cornellius ngondo_</h1><br>
-                <h2 class="animated fadeInLeft">eat | code | sleep</h2>        
-            </div>
+                <h1 class="element1"></h1><br>
+                <h2 class="element2"></h2>        
+            
+            <br />
+            <br />
             <br />
             <div class="row">
-                <div class="col s6">                    
-                    <h3><span id="coolbtnp">Portfolio</span></h3>   
+                <div class="col s6">
+                    <a id="btn" class="waves-effect waves-indigo darken-2 btn-flat">
+                        <h4><span id="coolbtnp">Portfolio</span></h4>
+                    </a>
                 </div>
                 
-                <div class="col s6">                    
-                    <h3><span id="coolbtnc">CV</span></h3>                            
+                <div class="col s6">
+                    <a id="btn" class="waves-effect waves-indigo darken-2 btn-flat">
+                        <h4><span id="coolbtnc">CV</span></h4>
+                    </a>
                 </div>
+            </div>
             </div>
             <div id="navbarbottom" class="row">
                 <div class="col s12" >
