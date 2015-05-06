@@ -1,6 +1,6 @@
 #body{
-    background-color: solid whitesmoke;
-    background-image: url("/assets/bg2.jpg");
+    background-color:solid black;
+/*    background-image: url("/assets/bg2.jpg");*/
     background-size: cover;
 }
 .name{
@@ -10,4 +10,10 @@
 }
 #hdr{
     text-decoration-color: #ffffff;
+}
+#navheader{
+    position: relative;
+}
+#nav{
+    bottom: 0;
 }
