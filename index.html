@@ -5,38 +5,51 @@
         <link rel="stylesheet" type="text/css" href="css/mystyle.css">
         <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
         <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/jquery.textillate.js"></script>
+        <script type="text/javascript" src="js/jquery.fittext.js"></script>
+        <script type="text/javascript" src="js/jquery.lettering.js"></script>
+        <script type="text/javascript" src="index.js"></script>    
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+<!--
+        <script>
+            $('.hdr').textillate({ in: { effect: 'fadeInLeft' } });
+        </script>
+-->
           
     </head>
-    <body id="body" class="#3f51b5 indigo-text">
+    <body id="body" class="#3f51b5 indigo-text">        
         <div class="container">        
-            <div class="center-align" class="col s12" id="hdr">                
-                <h1 class="animated fadeInLeftBig" >cornellius ngondo_</h1><br>
-                <h2 class="animated fadeInRightBig" >eat | code | sleep</h2>        
+            <div class="center-align" class="col s12">                
+                <h1 class="animated fadeInDown">cornellius ngondo_</h1><br>
+                <h2 class="animated fadeInLeft">eat | code | sleep</h2>        
             </div>
             <br />
             <div class="row">
-                <div class="col s6">
-                    <a class="waves-effect waves-#3f51b5 indigo btn"><span>Portfolio</span></a>            
+                <div class="col s6">                    
+                    <h3><span id="coolbtnp">Portfolio</span></h3>   
                 </div>
                 
-                <div class="col s6">
-                    <a class="waves-effect waves-#3f51b5 indigo btn">CV</a>            
+                <div class="col s6">                    
+                    <h3><span id="coolbtnc">CV</span></h3>                            
                 </div>
             </div>
-            <div class="row">
-                <div class="col s12">
-                    
+            <div id="navbarbottom" class="row">
+                <div class="col s12" >
+                    <nav class="#ffffff white">
+                       <div class="nav-wrapper">
+                        <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="sass.html" class="#3f51b5 indigo-text" >Sass</a></li>
+                        <li><a href="components.html" class="#3f51b5 indigo-text">Components</a>
+                            </li>
+                        <li><a href="javascript.html" class="#3f51b5 indigo-text" >JavaScript</a>
+                            </li>
+                          </ul>
+                        </div>
+                     </nav>                    
                 </div>
             </div>
-<!--
-        <script type="text/javascript" src="js/jquery-2.1.4.min.js">
-           
-        </script>   
-        <script type="text/javascript" src="index.js">
-            </script>    
--->
-        <script type="text/javascript" src="js/materialize.min.js">
-        </script>
+        
         </div>
     </body>
 </html>
