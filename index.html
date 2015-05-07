@@ -44,22 +44,23 @@
                     <span class="element1">Cornellius</span>
                     <span class="typed-cursor"></span>
                 </h1><br>
-                <h2 class="element2"></h2>            
+                <h5 class="element2">android | ruby on rails | HTML5/CSS3</h5>            
             <br />
             <br />
             <br />
-            <div class="row">
-                <div class="col s6">
+            <div class="row" class="animated fadeInUp">
+                <div class="col s6">                    
                     <a id="btn" class="waves-effect waves-indigo darken-2 btn-flat">
                         <h4><span id="coolbtnp">Portfolio</span></h4>
                     </a>
                 </div>
                 
-                <div class="col s6">
+                <div class="col s6">                   
                     <a id="btn" class="waves-effect waves-indigo darken-2 btn-flat">
                         <h4><span id="coolbtnc">CV</span></h4>
                     </a>
                 </div>
+                
             </div>
             </div>
             <div id="navbarbottom" class="row">
@@ -67,10 +68,16 @@
                     <nav class="#ffffff white">
                        <div class="nav-wrapper">
                         <ul id="nav-mobile" class="left hide-on-med-and-down">
-                        <li><a href="sass.html" class="#3f51b5 indigo-text" >Sass</a></li>
-                        <li><a href="components.html" class="#3f51b5 indigo-text">Components</a>
+                        <li><a href="sass.html" class="#3f51b5 indigo-text" >
+                            <i class="mdi-action-assignment"></i>
+                            </a></li>
+                        <li><a href="components.html" class="#3f51b5 indigo-text">
+                             <i class="mdi-hardware-computer"></i>
+                            </a>
                             </li>
-                        <li><a href="javascript.html" class="#3f51b5 indigo-text" >JavaScript</a>
+                        <li><a href="javascript.html" class="#3f51b5 indigo-text" >
+                            <i class="mdi-file-folder"></i>
+                            </a>
                             </li>
                           </ul>
                         </div>
@@ -78,16 +85,19 @@
                 </div>
             </div>        
         </div>
-        <script>
+        <script id="FI">
             $(function(){
                 $(".element1").typed({
-                    strings: ["an android developer.","a web designer.","Cornellius Ngondo"],
+                    strings: ["an android developer.","a web designer. ^1000 ","Cornellius Ngondo."],
                     typeSpeed: 30,
                     callback: function(){
                         lift();
                     }
                 });
+                
+                $('.element2').fadeIn(2000);
             });            
         </script>
+        
     </body>
 </html>
