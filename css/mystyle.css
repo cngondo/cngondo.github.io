@@ -4,6 +4,9 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+#hdr{
+    height: 800px;
+}
 #btn{
     height: inherit;
     width: auto;
@@ -18,16 +21,4 @@
     border-width: 10px;    
     border: #3f51b5 solid 5px;
     padding: 5px 50px 5px;    
-}
-#navbarbottom{
-    position:absolute;
-    bottom:0;
-    width:inherit;
-    height:60px; 
-}
-#navheader{
-    position: relative;
-}
-#nav{
-    bottom: 0;
 }
