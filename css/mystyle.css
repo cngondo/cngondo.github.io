@@ -2,17 +2,7 @@
     background-color:solid ghostwhite;
 /*    background-image: url("/assets/bg2.jpg");*/
     background-size: cover;
-/*
-    opacity: 0.3;
-    position: absolute;
-    z-index: -4;
-*/
-}
-
-.name{
-    font-family: 'Sacramento', cursive;
-    text-align: center;
-    text-color: blue;
+    background-repeat: no-repeat;
 }
 #btn{
     height: inherit;
