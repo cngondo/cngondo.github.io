@@ -13,6 +13,12 @@
 #portfolio{
     height: 800px;
 }
+#about{
+     height: 800px;
+}
+#contactme{
+    height: 800px;
+}
 #btn{
     height: inherit;
     width: auto;

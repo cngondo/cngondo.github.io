@@ -10,7 +10,6 @@
         <script type="text/javascript" src="js/jquery.fittext.js"></script>
         <script type="text/javascript" src="js/jquery.lettering.js"></script>
         <script type="text/javascript" src="js/typed.js"></script>
-        <script type="text/javascript" src="index.js"></script>    
         <script type="text/javascript" src="js/materialize.min.js"></script>
         
         <style>
@@ -109,11 +108,12 @@
                           <a id="toportfolio" class="btn-floating #3f51b5 indigo">
                               <i class="mdi-hardware-computer"></i>
                           </a><span>PORTFOLIO</span></li>
-                      <li><a class="btn-floating #3f51b5 indigo">
+                      <li>
+                          <a id="tocontactme" class="btn-floating #3f51b5 indigo">
                           <i class="large mdi-editor-publish"></i>
                           </a><span>CONTACT</span></li>
                       <li>
-                          <a class="btn-floating #3f51b5 indigo">
+                          <a id="toabout" class="btn-floating #3f51b5 indigo">
                               <i class="mdi-file-folder"></i>
                           </a><span>ABOUT</span></li>
                     </ul>
@@ -187,14 +187,14 @@
                 </div>
             </div>        
         </div>
-        <div id="resume" class="container">
+        <div id="about" class="container">
             <div class="row">
                 <div class="col s12" >
                     <h3>ABOUT</h3>
                 </div>
             </div>        
         </div>
-        <div id="resume" class="container">
+        <div id="contactme" class="container">
             <div class="row">
                 <div class="col s12" >
                     <h3>CONTACT ME</h3>
@@ -227,6 +227,17 @@
                         scrollTop: $("#portfolio").offset().top
                     }, 500);
                 });
+                $("#tocontactme").click(function() {
+                    $('html, body').animate({
+                        scrollTop: $("#contactme").offset().top
+                    }, 500);
+                });
+                $("#toabout").click(function() {
+                    $('html, body').animate({
+                        scrollTop: $("#about").offset().top
+                    }, 500);
+                });
+                
             });
             
         </script>
