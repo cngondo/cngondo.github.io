@@ -7,6 +7,12 @@
 #hdr{
     height: 800px;
 }
+#resume{
+    height: 800px;
+}
+#portfolio{
+    height: 800px;
+}
 #btn{
     height: inherit;
     width: auto;
