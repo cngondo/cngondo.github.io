@@ -11,7 +11,7 @@
         <script type="text/javascript" src="js/jquery.lettering.js"></script>
         <script type="text/javascript" src="js/typed.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
-        
+          
         <style>
             .typed-cursor{
                 opacity: 1;
@@ -37,9 +37,11 @@
         </style>
     </head>
     <body id="body" class="#3f51b5 indigo-text"> 
+         <br />
+        <br />              
 <!--
         <div class="navbar-fixed">
-            <nav class="N/A transparent">
+            <nav class="#ffffff white">
                        <div class="nav-wrapper">
                         <a href="#" class="brand-logo">                            
                             <span class="#3f51b5 indigo-text"><strong>cn</strong></span>
@@ -61,14 +63,21 @@
                      </nav>
             </div>
 -->
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+        <nav id="slide-out" class="side-nav">
+            <ul>
+                <li><a href="#!">First Sidebar Link</a></li>
+                <li><a href="#!">Second Sidebar Link</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse show-on-large">
+              <i class="medium mdi-action-settings-power left-align"></i>
+            </a> 
+        </nav>      
+        <br />
+        <br />
+        <br />
+        <div id="bghead">     
         <div class="container" id="hdr">                      
-            <div class="center-align" class="col s12">
+            <div class="col s12 center-align">
                 <strong>
                 <h1>I am 
                     <span class="element1">Cornellius</span>
@@ -121,6 +130,7 @@
                 </div>                
             </div>
             </div>            
+        </div>
         </div>
         <div id="resume" class="container">
             <div class="row">
@@ -214,7 +224,7 @@
                 
                 $('.element2').fadeIn(2000);
             });            
-        </script>
+        </script>                  
         <script>
             $(document).ready(function(){ 
                 $("#toresume").click(function() {
@@ -236,10 +246,10 @@
                     $('html, body').animate({
                         scrollTop: $("#about").offset().top
                     }, 500);
-                });
-                
+                });  
+                $('.button-collapse').sideNav('show');
             });
-            
+           
         </script>
     </body>
 </html>

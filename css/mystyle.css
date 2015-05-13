@@ -1,11 +1,17 @@
 #body{
     background-color:solid ghostwhite;
-/*    background-image: url("/assets/bg2.jpg");*/
+/*    background-image: url("/assets/phone-computer.jpg");*/
     background-size: cover;
     background-repeat: no-repeat;
 }
+#bghead{
+/*    background-image: url("/assets/bg_header2.jpg");*/
+    background-size: cover;
+    z-index: -1;
+}
 #hdr{
     height: 800px;
+    z-index: 4;
 }
 #resume{
     height: 800px;
