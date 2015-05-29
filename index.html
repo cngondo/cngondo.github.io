@@ -5,12 +5,14 @@
         <link rel="stylesheet" type="text/css" href="css/mystyle.css" charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
         <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/socialstyle.css">
         <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="js/jquery.textillate.js"></script>
         <script type="text/javascript" src="js/jquery.fittext.js"></script>
         <script type="text/javascript" src="js/jquery.lettering.js"></script>
         <script type="text/javascript" src="js/typed.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/prefixfree.min.js"></script>
           
         <style>
             .typed-cursor{
@@ -39,78 +41,29 @@
     </head>
     <body id="body" class="#ffffff white #263238 blue-grey darken-4-text"> 
                    
-<!--
-        <div class="navbar-fixed">
-            <nav class="#ffffff white">
-                       <div class="nav-wrapper">
-                        <a href="#" class="brand-logo">                            
-                            <span class="#3f51b5 indigo-text"><strong>cn</strong></span>
-                        </a>
-                        <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="sass.html" class="#3f51b5 indigo-text" >
-                            <i class="mdi-action-assignment"></i>
-                            </a></li>
-                        <li><a href="components.html" class="#3f51b5 indigo-text">
-                             <i class="mdi-hardware-computer"></i>
-                            </a>
-                            </li>
-                        <li><a href="javascript.html" class="#3f51b5 indigo-text" >
-                            <i class="mdi-file-folder"></i>
-                            </a>
-                            </li>
-                          </ul>
-                        </div>
-                     </nav>
-            </div>
--->
-<!--
-        <a href="#" data-activates="slide-out" class="button-collapse">
-              <i class="medium mdi-action-settings-power left-align show-on-med-and-down"></i>
-        </a> 
-        <ul id="slide-out" class="side-nav">
-            <li><a href="#resume" id="toresume">RESUME</a></li>
-            <li><a href="#!">PORTFOLIO</a></li>
-            <li><a href="#!">CONTACT</a></li>
-            <li><a href="#!">ABOUT</a></li>
-        </ul>
--->    
-           
-       
-        <div id="bghead">     
+    <div id="bghead">     
         <div class="container" id="hdr">                      
             <div class="col s12 left-align">
                 <br />
                 <br />
                 <br />
                 <strong>
-                <h1>I am 
+                <h3 class="white-text">I am 
                     <span class="element1">Cornellius</span>
                     <span class="typed-cursor"></span>
-                </h1><br>
-                <h5 class="element2">android | ruby on rails | HTML5/CSS3</h5>
+                </h3><br>
+                <h5 class="element2 white-text">
+                    android | ruby on rails | HTML5/CSS3</h5>
                 </strong>
             <br />
             <br />
             <br />
-            <div class="row" class="animated fadeInUp">
-                <div class="col s6">                    
-<!--
-                    <a id="btn" class="waves-effect waves-indigo darken-2 btn-flat">
-                        <h4><span id="coolbtnp">CONTACT</span></h4>
-                    </a>
--->
-                </div>
-                
-                <div class="col s6">                   
-<!--
-                    <a id="btn" class="waves-effect waves-indigo darken-2 btn-flat">
-                        <h4><span id="coolbtnc">RESUME</span></h4>
-                    </a>
--->
+            <div class="row" class="animated fadeInUp">                
 <!--                    Floating action button-->
-                <div class="fixed-action-btn hide-on-med-and-down" style="bottom: 50px; right: 70px;">
-                    <a class="btn-floating btn-large #3f51b5 indigo">
-                      <i class="large mdi-editor-mode-edit"></i>
+                <div class="fixed-action-btn hide-on-med-and-down white-text #ffffff" 
+                     style="bottom: 50px; right: 70px;">
+                    <a class="btn-floating btn-large #3f51b5 indigo" id="tohome">
+                      <i class="large mdi-action-home"></i>
                     </a>
                     <ul>
                       <li>
@@ -125,7 +78,7 @@
                           </a><span>PORTFOLIO</span></li>
                       <li>
                           <a id="tocontactme" class="btn-floating #3f51b5 indigo">
-                          <i class="large mdi-editor-publish"></i>
+                          <i class="large mdi-action-perm-identity"></i>
                           </a><span>CONTACT</span></li>
                       <li>
                           <a id="toabout" class="btn-floating #3f51b5 indigo">
@@ -137,14 +90,15 @@
             </div>
             </div>            
         </div>
-        </div>
-        <div id="resume" class="container">
-            <div class="row">
-                <div class="col s12" >
-                    <h3>RESUME</h3>
-                    <div class="row #3f51b5 indigo">
-                        <div class="col s6 #ffffff white-text">
-                            <h5>Technologies</h5>
+        <div id="resume" class="row">
+            <div id="resumeimg" class="row">
+                <h3 class="center fontfor">RESUME</h3>
+            </div>            
+            <div class="row container">
+                <div class="col s12" >                    
+                    <div class="row">
+                        <div class="col s6 valign-wrapper fontfor">
+                            <h3>Technologies</h3>
                         </div>
                         <div class="col s6 #ffffff white">
                             <div class="col s6">
@@ -165,11 +119,12 @@
                             </div>
                         </div>                       
                     </div>
+                    <div class="divider"></div>
                     <div class="row">
-                        <div class="col s6">
-                            <h5>Work Experience</h5>                        
+                        <div class="col s6 fontfor">
+                            <h3>Work Experience</h3>                        
                         </div>                        
-                        <div class="col s6 #3f51b5 indigo #ffffff white-text">
+                        <div class="col s6">
                             <div class="row ">
                                 <div class="cols6">
                                     <h5>IT Support Technician, Mwalimu SACCO
@@ -188,40 +143,161 @@
                                     <h7>January - April 2013</h7>
                                 </div>                        
                             </div>
-                        </div>    
-                        
+                        </div>                    
                     </div>
+                    <div class="divider"></div>
                     <div class="row">
                     </div>
                 </div>
             </div>        
         </div>
         <div id="portfolio" class="container">
+            <div class="col s12 fontfor" >
+               <h3 class="center">PORTFOLIO</h3>               
+            </div>
             <div class="row">
-                <div class="col s12" >
-                    <h3>PORTFOLIO</h3>
+                <div class="col s4">
+                    <div class="card medium">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="assets/Logo_cmc.png">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">
+                              CMC Motors 
+                              <i class="mdi-navigation-more-vert right"></i></span>
+                          <p>
+                              <a href="http://www.cmcmotors.com/kenya/index.html">
+                                  View Website
+                              </a>
+                            </p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">
+                              CMC Motors Group <i class="mdi-navigation-close right"></i></span>
+                          <p>
+                              CMC Motors Group Limited is a leading player in the East African
+                              motor industry with exclusive distribution of Ford, Mazda,
+                              Volkswagen and Suzuki vehicles. 
+                            </p>
+                        </div>
+                      </div>                
                 </div>
-            </div>        
+                <div class="col s4">
+                    <div class="card medium">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="assets/mwalimu-sacco.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">
+                              Mwalimu SACCO 
+                              <i class="mdi-navigation-more-vert right"></i></span>
+                          <p>
+                              <a href="http://www.mwalimusacco.coop/">
+                                  View Website
+                              </a>
+                            </p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">
+                             Mwalimu SACCO <i class="mdi-navigation-close right"></i></span>
+                          <p>
+                              Mwalimu Cooperative Savings & Credit Society Limited (SACCO) 
+                              is a SACCO Society whose main objective is to
+                              mobilize savings and provide credit to members.
+                            </p>
+                        </div>
+                      </div>                
+                
+                </div>
+                <div class="col s4">
+                
+                </div>            
+            </div>
         </div>
-         <div id="contactme" class="container">
-            <div class="row">
+         <div id="contactme" class="row">
+            <div class="container">
                 <div class="col s12" >
-                    <h3>CONTACT ME</h3>
+                    <h3 class="center fontfor">CONTACT ME</h3>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="section N/A transparent" id="contactmesection">
+                    <section>                     
+                    <ul id='services'>
+                        <li class="fontfor">
+                          <div class='entypo-facebook'></div>
+                          <span >Facebook</span>
+                        </li>
+                        <li class="fontfor">
+                          <div class='entypo-twitter'></div>
+                          <span>Twitter</span>
+                        </li>
+                        <li class="fontfor">
+                          <div class='entypo-gplus'></div>
+                          <span>Plus</span>
+                        </li>
+                        <li class="fontfor">
+                          <div class='entypo-linkedin'></div>
+                          <span>LinkedIn</span>
+                        </li>
+                    </ul>
+                    </section>
                 </div>
             </div>        
         </div>        
         <div id="about" class="container">
             <div class="row">
                 <div class="col s12">
-                    <h3>ABOUT</h3>
+                    <h3 class="center fontfor">ABOUT</h3>
+                </div>
+                <br />
+                <div class="slider">
+                    <ul class="slides">
+                        <li>
+                            <img src="assets/bgmysite.jpg">
+                            <div class="caption center-align">
+                                <h2>I code</h2>
+                            </div>
+                        </li> 
+                        <li>
+                            <img src="assets/bgweb.jpg">
+                            <div class="caption left-align">
+                                <h2>I love design</h2>
+                            </div>
+                        </li>                         
+                    </ul>                
                 </div>
             </div>        
-        </div>       
+        </div>
+<!--        footer-->
+        <footer class="page-footer #3f51b5 indigo">
+          <div class="container">
+            <div class="row">
+                <div class="col s4">
+                </div>
+                <div class="col s4">
+                </div>
+                <div class="col s4">
+                </div>             
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container fontfor">
+            © 2015 Copyright Cornellius Ngondo            
+            </div>
+          </div>
+        </footer>
         <script id="FI">
             $(function(){
                 $(".element1").typed({
                     strings: 
-                    ["an android developer.","a web designer. ^1000 ","Cornellius."],
+                    ["an android developer...","a web designer...","Cornellius."],
                     typeSpeed: 50,
 //                    callback: function(){
 //                        lift();
@@ -234,6 +310,11 @@
         </script>                  
         <script>
             $(document).ready(function(){ 
+                $("#tohome").click(function() {
+                    $('html, body').animate({
+                        scrollTop: $("#hdr").offset().top
+                    }, 1500);
+                });
                 $("#toresume").click(function() {
                     $('html, body').animate({
                         scrollTop: $("#resume").offset().top
@@ -256,6 +337,11 @@
                 });  
                 
             });           
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                  $('.slider').slider({full_width: true});
+                });        
         </script>
     </body>
 </html>
