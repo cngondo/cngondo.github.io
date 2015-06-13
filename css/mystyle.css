@@ -5,17 +5,17 @@
     background-repeat: no-repeat;
 }
 @font-face {
-    font-family: 'myFirstFont';
-    src: url('1942-webfont.eot');
-    src: url('1942-webfont.eot?#iefix') format('embedded-opentype'),
-         url('1942-webfont.woff') format('woff'),
-         url('1942-webfont.ttf') format('truetype'),
-         url('1942-webfont.svg#1942_report1942_report') format('svg');
-    font-weight: thin;
-    font-style: thin;
+    font-family: 'robotothin';
+    src: url('Roboto-Thin-webfont.eot');
+    src: url('Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Thin-webfont.woff') format('woff'),
+         url('Roboto-Thin-webfont.ttf') format('truetype'),
+         url('Roboto-Thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 #bghead{
-    font-family: myFirstFont;
+    font-family: robotothin;
     background: url("/assets/circles6.jpg");
     background-size: cover;
     z-index: 2;
@@ -33,7 +33,7 @@
 }
 */
 .fontfor{
-    font-family: myFirstFont;
+    font-family: robotothin;
 }
 #resume{
     height: auto;    
