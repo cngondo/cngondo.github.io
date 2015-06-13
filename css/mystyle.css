@@ -24,7 +24,14 @@
 }
 #hdr{
     height: 800px;
-    z-index: 4;
+    position: relative;
+}
+#hdroverlay{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background: rgba(0,0,0,0.7);    
 }
 /*
 #resumeimg{
