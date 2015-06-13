@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
         <link rel="stylesheet" type="text/css" href="css/animate.css">
         <link rel="stylesheet" type="text/css" href="css/socialstyle.css">
+        <link rel="stylesheet" type="text/css" href="css/fakeLoader.css">
         <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="js/jquery.textillate.js"></script>
         <script type="text/javascript" src="js/jquery.fittext.js"></script>
@@ -13,6 +14,7 @@
         <script type="text/javascript" src="js/typed.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript" src="js/prefixfree.min.js"></script>
+        <script type="text/javascript" src="js/fakeLoader.min.js"></script>
           
         <style>
             .typed-cursor{
@@ -39,8 +41,8 @@
         </style>
         
     </head>
-    <body id="body" class="#ffffff white #263238 blue-grey darken-4-text"> 
-                   
+    <body id="body" class="#ffffff white #263238 blue-grey darken-4-text">
+        <div id="fakeloader"></div>
     <div id="bghead">     
         <div class="row" id="hdr">                      
             <div class="col s12 center-align" id="hdroverlay">
@@ -53,7 +55,7 @@
                 <br />
                 <strong class="white-text">
                 <h3>I am 
-                    <span class="element1">Cornellius</span>
+                    <span class="element1"></span>
                     <span class="typed-cursor"></span>
                 </h3><br>
                 <h5 class="element2 white-text valign">
@@ -297,11 +299,19 @@
             </div>
           </div>
         </footer>
+        <script type="text/javascript">
+            $("#fakeloader").fakeLoader({
+                timeToHide:3000, //Time in milliseconds for fakeLoader disappear
+                zIndex:"999",//Default zIndex
+                spinner:"spinner1",
+                bgColor:"#000000"
+            });
+        </script>
         <script id="FI">
             $(function(){
                 $(".element1").typed({
                     strings: 
-                    ["an android developer...","a web designer...","Cornellius."],
+                    ["^3500 an android developer...","a web designer...","Cornellius."],
                     typeSpeed: 50,
 //                    callback: function(){
 //                        lift();
