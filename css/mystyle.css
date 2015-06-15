@@ -19,6 +19,7 @@
     font-family: droidsansmono;
     background: url("../assets/bgmysite.jpg");
     background-size: cover;
+    background-attachment: fixed;
     z-index: 2;
     text-decoration: bold;    
 }
@@ -40,10 +41,13 @@
 #resume{
     height: auto;    
 }
+#portfolioimage{
+    background-image: url("../assets/img_phone2.jpg");
+    background-position: cover;    
+}
 #portfolio{
     height: 800px;
 }
-
 #contactme{
     height: 800px;
     background-image: url("../assets/header.jpg");    
@@ -82,4 +86,7 @@
     border-width: 10px;    
     border: #3f51b5 solid 5px;
     padding: 5px 50px 5px;    
+}
+.abouttext{
+    font-size: 20px;
 }
