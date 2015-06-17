@@ -352,16 +352,19 @@
                 }        
         </script>    
         <script type="text/javascript">
+            var $j = jQuery.noConflict();
+            $j('#resume').hide();
+            $j('#resume').hide();
              var options = [
                     {selector: '#resume', offset: 600, callback: 'fadeUp()' },
-                    {selector: '#portfolio', offset: 100, callback: 'fadeUp()'}
+                    {selector: '#portfolio', offset: 1000, callback: 'fadeUp()'}
                   ];
                   Materialize.scrollFire(options);
             //The global functions
             //Animated the fadeUp
-            function fadeUp(){
-                jQuery('#resume').addClass('animated fadeInUp');
-                jQuery('#portfolio').addClass('animated fadeInUp');
+            function fadeUp(){                
+                jQuery('#resume').addClass('animated fadeInUp').show();
+                jQuery('#portfolio').addClass('animated fadeInUp').show();
             }
         </script>                     
         <script>
