@@ -54,19 +54,21 @@
                 <br />
                 <br />
                 <strong class="white-text">
-                <h3>I am 
-                    <span class="element1"></span>
-                    <span class="typed-cursor"></span>
-                </h3><br>
-                <h5 class="element2 white-text valign">
-                    android | ruby on rails | HTML5/CSS3</h5>
-                </strong>
+                <div class="cor">
+                    <h3>I am 
+                        <span class="element1"></span>
+                        <span class="typed-cursor"></span>
+                    </h3><br>
+                    <h5 class="element2 white-text valign">
+                        android | ruby on rails | HTML5/CSS3</h5>
+                    </strong>                    
+                </div>                
             <br />
             <br />
             <br />
             <div class="row" class="animated fadeInUp">                
 <!--                    Floating action button-->
-                <div class="fixed-action-btn hide-on-med-and-down white-text #ffffff" 
+                <div class="fixed-action-btn hide-on-med-and-down white-text #ffffff fab cor" 
                      style="bottom: 50px; right: 70px;">
                     <a class="btn-floating btn-large #3f51b5 indigo" id="tohome">
                       <i class="large mdi-action-home"></i>
@@ -321,6 +323,7 @@
           </div>
         </footer>
         </div> 
+<!--
         <script type="text/javascript">
             //preloader script
             $("#fakeloader").fakeLoader({
@@ -330,11 +333,20 @@
                 bgColor:"#000000"
             });
         </script>
+-->
+<!--
         <script type="text/javascript">
-            
+            var options = [
+                    {selector: '.class', offset: 200, callback: 'globalFunction()' },
+                    {selector: '.other-class', offset: 200, callback: 'globalFunction()' },
+                  ];
+                  Materialize.scrollFire(options);            
         </script>
+-->
         <script>
             var $j=jQuery.noConflict();
+                $j('.element2').hide();
+                $j('.fab').hide();
                 $j(".element1").typed({
                     strings: 
                     ["^2200 an android developer...","a web designer...","Cornellius."],
@@ -343,10 +355,10 @@
                         lift();
                     }
                 });
-                function lift(){                    
-                    (document).ready(function($){
-                        jQuery.fadeIn(5000);
-                    });                                 
+                function lift(){
+                    $j('.element2').show();
+                    $j('.fab').show();
+                    jQuery('.cor').addClass('animated fadeInUp');                  
                 }        
         </script>                  
         <script>
