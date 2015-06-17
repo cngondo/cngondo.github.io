@@ -330,8 +330,12 @@
                 bgColor:"#000000"
             });
         </script>
-        <script id="FI">            
-                $(".element1").typed({
+        <script type="text/javascript">
+            
+        </script>
+        <script>
+            var $j=jQuery.noConflict();
+                $j(".element1").typed({
                     strings: 
                     ["^2200 an android developer...","a web designer...","Cornellius."],
                     typeSpeed: 30,
@@ -339,14 +343,15 @@
                         lift();
                     }
                 });
-                function lift(){
-                    $('.element2').fadeIn(5000);
-                }              
-                   
+                function lift(){                    
+                    (document).ready(function($){
+                        jQuery.fadeIn(5000);
+                    });                                 
+                }        
         </script>                  
         <script>
             //Navigation throughout the page
-            $(document).ready(function(){ 
+            jQuery(document).ready(function($){ 
                 $("#tohome").click(function() {
                     $('html, body').animate({
                         scrollTop: $("#hdr").offset().top
@@ -371,9 +376,8 @@
                     $('html, body').animate({
                         scrollTop: $("#about").offset().top
                     }, 1500);
-                });  
-
-            
+                });
+            });
             //To show the labels
            
         </script>              
