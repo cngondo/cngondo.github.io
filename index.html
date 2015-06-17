@@ -78,20 +78,20 @@
                           <a id="toresume" class="btn-floating #3f51b5 indigo">
                                <i class="mdi-action-assignment"></i>                              
                           </a>
-                          <span></span>                          
+                          <span>RESUME</span>                          
                         </li>
                       <li>
                           <a id="toportfolio" class="btn-floating #3f51b5 indigo">
                               <i class="mdi-hardware-computer"></i>
-                          </a><span></span></li>
+                          </a><span>PORTFOLIO</span></li>
                       <li>
                           <a id="tocontactme" class="btn-floating #3f51b5 indigo">
                           <i class="large mdi-action-perm-identity"></i>
-                          </a><span></span></li>
+                          </a><span>CONTACT</span></li>
                       <li>
                           <a id="toabout" class="btn-floating #3f51b5 indigo">
                               <i class="mdi-file-folder"></i>
-                          </a><span></span></li>
+                          </a><span>ABOUT</span></li>
                     </ul>
                   </div>
                 </div>                
@@ -322,8 +322,7 @@
             </div>
           </div>
         </footer>
-        </div> 
-<!--
+        </div>       
         <script type="text/javascript">
             //preloader script
             $("#fakeloader").fakeLoader({
@@ -333,18 +332,9 @@
                 bgColor:"#000000"
             });
         </script>
--->
-<!--
-        <script type="text/javascript">
-            var options = [
-                    {selector: '.class', offset: 200, callback: 'globalFunction()' },
-                    {selector: '.other-class', offset: 200, callback: 'globalFunction()' },
-                  ];
-                  Materialize.scrollFire(options);            
-        </script>
--->
-        <script>
+         <script>
             var $j=jQuery.noConflict();
+            //hides elements before the type script runs
                 $j('.element2').hide();
                 $j('.fab').hide();
                 $j(".element1").typed({
@@ -360,7 +350,20 @@
                     $j('.fab').show();
                     jQuery('.cor').addClass('animated fadeInUp');                  
                 }        
-        </script>                  
+        </script>    
+        <script type="text/javascript">
+             var options = [
+                    {selector: '#resume', offset: 600, callback: 'fadeUp()' },
+                    {selector: '#portfolio', offset: 100, callback: 'fadeUp()'}
+                  ];
+                  Materialize.scrollFire(options);
+            //The global functions
+            //Animated the fadeUp
+            function fadeUp(){
+                jQuery('#resume').addClass('animated fadeInUp');
+                jQuery('#portfolio').addClass('animated fadeInUp');
+            }
+        </script>                     
         <script>
             //Navigation throughout the page
             jQuery(document).ready(function($){ 
