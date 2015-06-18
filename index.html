@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="css/animate.css">
         <link rel="stylesheet" type="text/css" href="css/socialstyle.css">
         <link rel="stylesheet" type="text/css" href="css/fakeLoader.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.jMosaic.css">
         <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="js/jquery.textillate.js"></script>
         <script type="text/javascript" src="js/jquery.fittext.js"></script>
@@ -15,6 +16,7 @@
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript" src="js/prefixfree.min.js"></script>
         <script type="text/javascript" src="js/fakeLoader.min.js"></script>
+        <script type="text/javascript" src="js/jquery.jMosaic.min.js"></script>
           
         <style>
             .typed-cursor{
@@ -198,7 +200,7 @@
                 <div class="col s4">
                     <div class="card medium">
                         <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="assets/mwalimu-sacco.jpg">
+                          <img class="activator" src="assets/mwalimu.jpg">
                         </div>
                         <div class="card-content">
                           <span class="card-title activator grey-text text-darken-4">
@@ -297,8 +299,13 @@
                             <strong>Passion is my engine and people are my investment.</strong>    
                         </p>                        
                     </div>
-                    <div class="col s6">
-                        
+                    <div class="pictures col s6 ">
+                        <img src="assets/car.jpg">
+<!--
+                        <img src="assets/car2.jpg">
+                        <img src="assets/car3.jpg">
+                        <img src="assets/me.JPG">                       
+-->
                     </div>
                 </div>                              
             </div>        
@@ -396,8 +403,19 @@
                     }, 1500);
                 });
             });
-            //To show the labels
-           
-        </script>              
+            //To show the labels           
+        </script>
+<!--
+        <script>
+            jQuery(document).ready(function($){ 
+                jQuery('.pictures').jMosaic({
+                    items_type: "li", 
+                      min_row_height: 200, 
+                      margin: 3, 
+                      is_first_big: true
+                });
+            });                
+        </script>
+-->
     </body>
 </html>
