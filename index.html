@@ -136,20 +136,20 @@
                         </div>                        
                         <div class="col s6">
                             <div class="row ">
-                                <div class="cols6">
+                                <div class="col s6">
                                     <h5>IT Support Technician, Mwalimu SACCO
                                     </h5>                                                        
                                 </div>
-                                <div class="cols6">
+                                <div class="col s6">
                                     <h7>February - April 2014</h7>
                                 </div>
                             </div>
                         
                             <div class="row">
-                                <div class="cols6">
+                                <div class="col s6">
                                     <h5>IT Support Technician, CMC Holdings Limited</h5>
                                 </div>
-                                <div class="cols6">
+                                <div class="col s6">
                                     <h7>January - April 2013</h7>
                                 </div>                        
                             </div>
@@ -157,10 +157,36 @@
                     </div>
                     <div class="divider"></div>
                     <div class="row">
+                        <div class="col s6 fontfor">
+                          <h3>EDUCATION</h3>                        
+                        </div>                        
+                        <div class="col s6">
+                            <div class="row ">
+                                <div class="col s6">
+                                    <h5>Multimedia University
+                                    </h5>                                                        
+                                </div>
+                                <div class="col s6">
+                                    <h7>2011-2015</h7>
+                                </div>
+                            </div>
+                        
+                            <div class="row">
+                                <div class="col s6">
+                                    <h5>Nakuru High School</h5>
+                                </div>
+                                <div class="col s6">
+                                    <h7>2006-2009</h7>
+                                </div>                        
+                            </div>
+                        </div> 
                     </div>
                 </div>
             </div>        
         </div>
+        <br />
+        <br />
+        <br />
 <!--        Image for parallax-->
         <div class="">
           <div id="portfolioimage">             
@@ -225,7 +251,30 @@
                 
                 </div>
                 <div class="col s4">
-                
+                    <div class="card medium">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="assets/mwalimu.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">
+                              Mwalimu SACCO 
+                              <i class="mdi-navigation-more-vert right"></i></span>
+                          <p>
+                              <a href="http://www.mwalimusacco.coop/">
+                                  View Website
+                              </a>
+                            </p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">
+                             Mwalimu SACCO <i class="mdi-navigation-close right"></i></span>
+                          <p>
+                              Mwalimu Cooperative Savings & Credit Society Limited (SACCO) 
+                              is a SACCO Society whose main objective is to
+                              mobilize savings and provide credit to members.
+                            </p>
+                        </div>
+                      </div>                
                 </div>            
             </div>
         </div>
@@ -332,7 +381,7 @@
         </div>       
         <script type="text/javascript">
             //preloader script
-            $("#fakeloader").fakeLoader({
+            jQuery("#fakeloader").fakeLoader({
                 timeToHide:2000, //Time in milliseconds for fakeLoader disappear
                 zIndex:"999",//Default zIndex
                 spinner:"spinner2",
@@ -355,16 +404,19 @@
                 function lift(){
                     $j('.element2').show();
                     $j('.fab').show();
-                    jQuery('.cor').addClass('animated fadeInUp');                  
+                    jQuery('.cor').addClass('animated fadeInUp');
+                    return true;
                 }        
-        </script>    
+        </script>
+<!--        Scroll to reveal script-->
+<!--
         <script type="text/javascript">
             var $j = jQuery.noConflict();
             $j('#resume').hide();
             $j('#resume').hide();
              var options = [
-                    {selector: '#resume', offset: 600, callback: 'fadeUp()' },
-                    {selector: '#portfolio', offset: 1000, callback: 'fadeUp()'}
+                    {selector: '#resume', offset: , callback: 'fadeUp()' },
+                    {selector: '#portfolio', offset: , callback: 'fadeUp()'}
                   ];
                   Materialize.scrollFire(options);
             //The global functions
@@ -372,8 +424,10 @@
             function fadeUp(){                
                 jQuery('#resume').addClass('animated fadeInUp').show();
                 jQuery('#portfolio').addClass('animated fadeInUp').show();
+                return true;
             }
         </script>                     
+-->
         <script>
             //Navigation throughout the page
             jQuery(document).ready(function($){ 
