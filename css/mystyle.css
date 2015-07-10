@@ -21,7 +21,7 @@
     background-size: cover;
     background-attachment: fixed;
     z-index: 2;
-    text-decoration: bold;    
+    text-decoration: bold;
 }
 #hdr{
     height: 800px;
@@ -32,25 +32,25 @@
     left: 0;
     width: 100%;
     height: 800px;
-    background: rgba(0,0,0,0.7);    
+    background: rgba(0,0,0,0.7);
 }
 
 .fontfor{
     font-family: droidsansmono;
 }
 #resume{
-    height: auto;    
+    height: auto;
 }
 #portfolioimage{
     background-image: url("../assets/img_phone2.jpg");
-    background-position: cover;    
+    background-position: cover;
 }
 #portfolio{
     height: 800px;
 }
 #contactme{
     height: 800px;
-    background-image: url("../assets/header.jpg");    
+    background-image: url("../assets/header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -65,10 +65,10 @@
     left: 0;
     width: 100%;
     height: inherit;
-    background: rgba(0,0,0,0.6);    
+    background: rgba(0,0,0,0.6);
 }
 #about{
-    height: 800px;
+    height: 700px;
     width: 100%;
     z-index: 10;
 }
@@ -78,15 +78,18 @@
 }
 
 #coolbtnp{
-    border-width: 10px;    
+    border-width: 10px;
     border: #3f51b5 solid 5px;
-    padding: 5px;    
+    padding: 5px;
 }
 #coolbtnc{
-    border-width: 10px;    
+    border-width: 10px;
     border: #3f51b5 solid 5px;
-    padding: 5px 50px 5px;    
+    padding: 5px 50px 5px;
 }
 .abouttext{
     font-size: 20px;
+}
+.pictures{
+  background: url("assets/me.jpg");
 }
